@@ -161,3 +161,55 @@ nav ul li ul li a:hover{
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 
 }
+
+@media screen and (max-width: 720px){
+    .search input{
+        display: none;
+    }
+
+    .header__superior{
+        padding: 10px;
+    }
+
+    .logo img{
+        width: 200px;
+    }
+    .logo2 img{
+        width: 200px;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        background-color: #895604;
+        position: fixed;
+        left: 0;
+        top: 158px;
+        width: 100%;
+        height: 300px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale (1);
+    }
+
+    nav ul li ul{
+        left: 90px;
+    }
+
+    nav > ul > li:hover ul{
+       top: 50px;
+    }
+
+    nav > ul> li:first-child  a{
+        background-position: 20px;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+    
+}
